@@ -1,0 +1,28 @@
+﻿using UnityEngine;
+
+
+
+/////////////////////////////////////////////////////////////////////
+//
+////////////////////////////////////////////s/////////////////////////
+public static class SiMath 
+{
+
+    /////////////////////////////////////////////////////////////////////
+    //
+    /////////////////////////////////////////////////////////////////////
+    public static float CalcDist(Vector3 pa, Vector3 pb)
+    {
+        float dist_x;
+        float dist_y;
+        float dist_z;
+    
+        dist_x = pb.x - pa.x;
+        dist_y = pb.y - pa.y;
+        dist_z = pb.z - pa.z;
+    
+        return (dist_x * dist_x) + (dist_y * dist_y) + (dist_z * dist_z);
+    }
+
+
+}
